@@ -211,13 +211,13 @@
         );
     }
 
-        function mostrarProblemas(dados) {
+        function mostrarProblemas(response) {
             $("#tb_problemas").dataTable().fnClearTable();
             $("#tb_problemas").dataTable().fnDestroy();
 
             $("#tb_problemas").dataTable(
                 {
-                    data: dados,
+                    data: response,
                     filter: true,
                     destroy: true,
                     paging: true,
